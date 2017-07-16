@@ -26,7 +26,7 @@
             "CommandLine\\Tests\\": "tests/"
         }
     },
-    "scripts": 
+    "scripts": {
         "post-install-cmd": [
             "CommandLine\\Foundation\\ComposerScripts::install",
             "php lifecode"
