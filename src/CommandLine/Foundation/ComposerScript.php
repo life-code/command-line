@@ -6,13 +6,6 @@ use Composer\Script\Event;
 
 class ComposerScript
 {
-    private $event;
-    
-    public function __construct(Event $event)
-    {
-        $this->event = $event;
-    }
-    
     /**
      * Handle the post-install Composer event.
      *
@@ -21,10 +14,7 @@ class ComposerScript
      */
     public static function postInstall(Event $event)
     {
-        var_dump($event);
-        die;
-        
-        // $instance = new static($event);
+        $event->getIO()->write("Show me after INSTALL command");
     }
     
     /**
@@ -35,9 +25,6 @@ class ComposerScript
      */
     public static function postUpdate(Event $event)
     {
-        var_dump($event);
-        die;
-        
-        // $instance = new static($event);
+        $event->getIO()->write("Show me after UPDATE command");
     }
 }
