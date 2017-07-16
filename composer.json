@@ -28,21 +28,21 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "CommandLine\\Foundation\\ComposerScripts::postInstall",
+            "CommandLine\\Foundation\\ComposerScript::postInstall",
             "php lifecode"
         ],
         "post-update-cmd": [
-            "CommandLine\\Foundation\\ComposerScripts::postUpdate",
+            "CommandLine\\Foundation\\ComposerScript::postUpdate",
             "php lifecode"
         ],
         "post-package-install": [
-            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
+            "CommandLine\\Foundation\\ComposerScript::postUpdate"
         ],
         "post-autoload-dump": [
-            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
+            "CommandLine\\Foundation\\ComposerScript::postUpdate"
         ],
         "post-create-project-cmd": [
-            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
+            "CommandLine\\Foundation\\ComposerScript::postUpdate"
         ]
     },
     "config": {

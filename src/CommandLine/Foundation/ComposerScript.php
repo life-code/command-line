@@ -1,6 +1,6 @@
 <?php
 
-namespace CommandLine\Foudantion;
+namespace CommandLine\Foundation;
 
 use Composer\Script\Event;
 
