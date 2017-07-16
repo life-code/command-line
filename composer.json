@@ -26,6 +26,12 @@
             "CommandLine\\Tests\\": "tests/"
         }
     },
+    "scripts": 
+        "post-update-cmd": [
+            "CommandLine\\Foundation\\ComposerScripts::install",
+            "php lifecode"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
