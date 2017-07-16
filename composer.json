@@ -34,6 +34,15 @@
         "post-update-cmd": [
             "CommandLine\\Foundation\\ComposerScripts::postUpdate",
             "php lifecode"
+        ],
+        "post-package-install": [
+            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
+        ],
+        "post-autoload-dump": [
+            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
+        ],
+        "post-create-project-cmd": [
+            "CommandLine\\Foundation\\ComposerScripts::postUpdate"
         ]
     },
     "config": {
