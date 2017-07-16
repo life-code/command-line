@@ -28,7 +28,11 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "CommandLine\\Foundation\\ComposerScripts::install",
+            "CommandLine\\Foundation\\ComposerScripts::postInstall",
+            "php lifecode"
+        ],
+        "post-update-cmd": [
+            "CommandLine\\Foundation\\ComposerScripts::postUpdate",
             "php lifecode"
         ]
     },

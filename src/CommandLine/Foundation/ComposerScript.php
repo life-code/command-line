@@ -13,12 +13,31 @@ class ComposerScript
         $this->event = $event;
     }
     
-    public static function install(Event $event)
+    /**
+     * Handle the post-install Composer event.
+     *
+     * @param \Composer\Script\Event  $event
+     * @return void
+     */
+    public static function postInstall(Event $event)
     {
         var_dump($event);
         die;
         
-        $instance = new static($event);
+        // $instance = new static($event);
+    }
+    
+    /**
+     * Handle the post-update Composer event.
+     *
+     * @param \Composer\Script\Event  $event
+     * @return void
+     */
+    public static function postUpdate(Event $event)
+    {
+        var_dump($event);
+        die;
         
+        // $instance = new static($event);
     }
 }
