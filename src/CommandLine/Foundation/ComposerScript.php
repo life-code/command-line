@@ -15,20 +15,10 @@ class ComposerScript
     
     public static function install(Event $event)
     {
+        var_dump($event);
+        die;
+        
         $instance = new static($event);
         
-        if (!$instance->isInstalled()) {
-            $instance->installer();
-        }
-    }
-    
-    private function isInstalled()
-    {
-        return;
-    }
-    
-    private function installer()
-    {
-        var_dump($event);
     }
 }

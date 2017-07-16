@@ -27,10 +27,10 @@
         }
     },
     "scripts": 
-        "post-update-cmd": [
+        "post-install-cmd": [
             "CommandLine\\Foundation\\ComposerScripts::install",
             "php lifecode"
-        ]
+        ],
     },
     "minimum-stability": "dev",
     "prefer-stable": true
